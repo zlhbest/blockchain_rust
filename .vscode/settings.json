@@ -4,6 +4,7 @@
         "chrono",
         "HEXLOWER",
         "HEXUPPER",
+        "imgs",
         "rocksdb",
         "serde"
     ]
