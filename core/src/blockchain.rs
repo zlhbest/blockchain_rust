@@ -65,8 +65,8 @@ impl BlockChain {
         self.current_hash = new_block.hash.clone();
     }
 }
-
-impl Iterator for BlockChain {
+/// 调用的into_iter
+impl<'a> Iterator for &'a mut BlockChain {
     type Item = Block;
 
     fn next(&mut self) -> Option<Self::Item> {
